@@ -92,8 +92,13 @@ body{
   font-family: inherit;
   color: inherit;
 }
+.font-selector__text-details strong{
+  font-weight: 500;
+  font-style: italic;
+}
 .font-selector__text-details span{
   text-transform: capitalize;
+  margin-right: 10px;
 }
 .font-selector p.font-selector__text{
   font-size: 18px;
