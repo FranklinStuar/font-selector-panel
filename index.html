@@ -9,7 +9,32 @@
 </head>
 <body>
   
-  
+  <div class="font-selector">
+    <div class="font-selector__card">
+      <div class="font-selector__group">
+        <label for="font-selector__select-font">Escoja el tipo de letra</label>
+        <select id="font-selector__select-font" class="font-selector__select">
+          <option value="Roboto">Roboto</option>
+          <option value="Poppins">Poppins</option>
+          <option value="Poor Story">Poor Story</option>
+        </select>
+      </div>
+      <div class="font-selector__group">
+        <label for="font-selector__input">Escriba su texto texto</label>
+        <input type="text" id="font-selector__input" class="font-selector__input" value="Mi web es buena para ti">
+      </div>
+    </div>
+    <div class="font-selector__card">
+      <div class="font-selector__text-result">
+        <div class="font-selector__text-details">
+          <strong>Fuente: </strong> Roboto;
+          <strong>Weight: </strong> Normal;
+          <strong>Estilo: </strong> Italic
+        </div>
+        <p class="font-selector__text"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore placeat deleniti possimus quam vero necessitatibus similique! Excepturi error sit doloribus.</p>
+      </div>
+    </div>
+  </div>
 
   <script src="`./script.js"></script>
 </body>
