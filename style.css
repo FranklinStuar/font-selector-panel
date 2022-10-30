@@ -1,7 +1,113 @@
-/*reset components*/
+/* 
+ * Agrego las fuentes desde google directamente , 
+ * Subir las fuentes directamente y utilizar @font-face para configurarlo en css
+ * si utiliza elementor u otro constructor, no se necesita agregar las fuentes, ya están instaladas por defecto
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Island+Moments&family=Poor+Story&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+/*reset components: NO UTILIZAR ESTE CÓDIGO YA QUE ES USADO PARA LAS PRUEBAS*/
 body{
   margin: 0;
   width: 100%;
   max-width: 100vw;
   min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+
+/* UTILIZAR ESTE CÓDIGO DENTRO DEL PROYECTO */
+.font-selector--panel , .font-selector--panel *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.font-selector--panel{
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  width: 100%;
+  display: grid;
+  gap: 20px;
+  background: white;
+}
+
+
+.font-selector__card{
+  padding: 20px;
+  border: 1px solid #c4c4c4;
+  border-radius: 8px;
+  display: grid;
+  gap: 20px;
+  align-content: start;
+  align-items: start;
+}
+.font-selector__card--text{
+  gap: 30px;
+}
+
+
+.font-selector__select option{
+  font-size: 14px;
+}
+.font-selector__group{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.font-selector__group input,
+.font-selector__group select{
+  width: 100%;
+  padding: 5px 10px;
+  outline-color: #505060;
+  border-color: #c4c4c4;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #606060;
+}
+.font-selector__group label{
+  font-weight: 700;
+  color: #4f4f4f;
+}
+
+
+.font-selector__text-result{
+  display: grid;
+  gap: 8px;
+}
+.font-selector__text-result:not(:last-child){
+  padding-bottom: 20px;
+  border-bottom: 1px solid #c4c4c4;
+}
+
+.font-selector__text-details{ /* necesario para usarlo con elementor ya que sabe reemplazar la información*/
+  font-size: 14px;
+  color: #606060;
+  font-family: "Roboto";
+}
+.font-selector__text-details strong,
+.font-selector__text-details span{ /* necesario para usarlo con elementor ya que sabe reemplazar la información*/
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+}
+.font-selector__text-details span{
+  text-transform: capitalize;
+}
+.font-selector p.font-selector__text{
+  font-size: 18px;
+  color: #2e2e2e;
+}
+
+
+@media (min-width:900px){
+  .font-selector--panel{
+    font-size: 14px;
+    grid-template-columns: 1fr 2fr;
+  }
+  .font-selector p.font-selector__text{
+    font-size: 24px;
+    color: #2e2e2e;
+  }
 }

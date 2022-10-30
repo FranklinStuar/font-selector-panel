@@ -9,8 +9,8 @@
 </head>
 <body>
   
-  <div class="font-selector">
-    <div class="font-selector__card">
+  <div class="font-selector font-selector--panel">
+    <div class="font-selector__card font-selector__card--input">
       <div class="font-selector__group">
         <label for="font-selector__select-font">Escoja el tipo de letra</label>
         <select id="font-selector__select-font" class="font-selector__select">
@@ -24,12 +24,28 @@
         <input type="text" id="font-selector__input" class="font-selector__input" value="Mi web es buena para ti">
       </div>
     </div>
-    <div class="font-selector__card">
+    <div class="font-selector__card font-selector__card--text">
       <div class="font-selector__text-result">
-        <div class="font-selector__text-details">
-          <strong>Fuente: </strong> Roboto;
-          <strong>Weight: </strong> Normal;
-          <strong>Estilo: </strong> Italic
+        <div class="font-selector__text-details"> 
+          <strong>Fuente: </strong> <span>Roboto;</span> <strong>Weight: </strong> <span>Normal;</span> <strong>Estilo: </strong> <span>Italic</span>
+        </div>
+        <p class="font-selector__text"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore placeat deleniti possimus quam vero necessitatibus similique! Excepturi error sit doloribus.</p>
+      </div>
+      <div class="font-selector__text-result">
+        <div class="font-selector__text-details"> 
+          <strong>Fuente: </strong> <span>Roboto;</span> <strong>Weight: </strong> <span>400;</span> <strong>Estilo: </strong> <span>Normal</span>
+        </div>
+        <p class="font-selector__text"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore placeat deleniti possimus quam vero necessitatibus similique! Excepturi error sit doloribus.</p>
+      </div>
+      <div class="font-selector__text-result">
+        <div class="font-selector__text-details"> 
+          <strong>Fuente: </strong> <span>Poor story;</span> <strong>Weight: </strong> <span>500;</span> <strong>Estilo: </strong> <span>italic</span>
+        </div>
+        <p class="font-selector__text"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore placeat deleniti possimus quam vero necessitatibus similique! Excepturi error sit doloribus.</p>
+      </div>
+      <div class="font-selector__text-result">
+        <div class="font-selector__text-details"> 
+          <strong>Fuente: </strong> <span>Roboto;</span> <strong>Weight: </strong> <span>900;</span> <strong>Estilo: </strong> <span>Normal</span>
         </div>
         <p class="font-selector__text"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore placeat deleniti possimus quam vero necessitatibus similique! Excepturi error sit doloribus.</p>
       </div>
